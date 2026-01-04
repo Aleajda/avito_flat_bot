@@ -1,0 +1,13 @@
+# IDE (VS Code, PyCharm)
+.vscode/
+.idea/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+# Специфичное для Avito бота
+# Папка с куками и сессией браузера (очень весит и содержит личные данные)
+avito_profile/

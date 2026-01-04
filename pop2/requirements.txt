@@ -1,0 +1,4 @@
+SQLAlchemy~=2.0.45
+pip~=23.2.1
+greenlet~=3.3.0
+typing_extensions~=4.15.0
