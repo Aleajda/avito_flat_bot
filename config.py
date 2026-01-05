@@ -26,11 +26,11 @@ DATABASE_URL = "sqlite+aiosqlite:///./avito_ads.db"
 # Город: Казань
 # Категория: Квартиры / Купить
 # Сортировка: По дате (чтобы быстрее находить новые)
-AVITO_URL = "https://www.avito.ru/kazan/kvartiry/prodam/vtorichka-ASgBAgICAkSSA8YQ5geMUg?district=782-783-784&f=ASgBAQECAkSSA8YQ5geMUgFAygg0hFmCWYBZAUXGvg0XeyJmcm9tIjoyMDAwLCJ0byI6bnVsbH0&localPriority=0&s=104"
+AVITO_URL = "https://www.avito.ru/kazan/kvartiry/prodam/vtorichka/on-map-ASgBAgICA0SSA8YQ5geMUqrfFQI?drawId=b6b6263c2718dc4f25f4c5130887638c&f=ASgBAQECBESSA8YQ5geMUo7eDgKq3xUCAUDKCCSEWYJZBEWECRV7ImZyb20iOjUwLCJ0byI6bnVsbH2MLhR7ImZyb20iOjMsInRvIjpudWxsfcaaDBh7ImZyb20iOjAsInRvIjoxNTAwMDAwMH3Gvg0XeyJmcm9tIjoyMDAwLCJ0byI6bnVsbH0&localPriority=0&s=104"
 
 # Интервал проверки (в секундах)
 # Рекомендую ставить не меньше 600 (10 минут), чтобы избежать частых блокировок по IP
-CHECK_INTERVAL = 1800  # 30 минут
+CHECK_INTERVAL = 6000  # 20 минут
 
 # --- ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ---
 HEADLESS_MODE = True  # Если False, будет открываться окно браузера (удобно для отладки)

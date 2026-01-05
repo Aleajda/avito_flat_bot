@@ -95,9 +95,9 @@ async def check_updates():
                                 f"🏠 <b>Новое объявление!</b>\n\n"
                                 f"📝 {item.title}\n"
                                 f"💰 <b>{item.price:,} ₽</b>\n"
-                                f"📏 Цена за м²: <b>{ppm_text} ₽</b>\n"
-                                f"📍 {item.address}\n"
-                                f"📅 {item.published_at}\n\n"
+                                f"Цена за м²: <b>{ppm_text} ₽</b>\n"
+                                f"Адрес: {item.address}\n"
+                                f"Дата публикации: {item.published_at}\n\n"
                                 f"🔗 <a href='{item.url}'>Открыть на Avito</a>"
                             ).replace(",", " ")
                             await notify_users(user_ids, msg)
@@ -119,7 +119,9 @@ async def check_updates():
                                 f"{icon} <b>Изменение цены!</b>\n\n"
                                 f"📝 {item.title}\n"
                                 f"💰 <b>{item.price:,} ₽</b> ({diff:+,} ₽)\n"
-                                f"📏 Новый м²: <b>{int(item.price_per_meter):,} ₽</b>\n\n"
+                                f"Цена за м²: <b>{int(item.price_per_meter):,} ₽</b>\n\n"
+                                f"Адрес: {item.address}\n"
+                                f"Дата публикации: {item.published_at}\n\n"
                                 f"🔗 <a href='{item.url}'>Открыть на Avito</a>"
                             ).replace(",", " ")
                             await notify_users(user_ids, msg)
